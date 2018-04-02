@@ -6,11 +6,3 @@ services:
 cache:  
   directories:
     - "node_modules"
-env:
-  global:
-    - NODE_ENV=travisci
-    - BUILD_DIR=`pwd`/zpratt
-before_script:
-  - npm install -g grunt-cli
-  - npm install -g bower
-  - bower install
